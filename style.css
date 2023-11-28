@@ -1,0 +1,214 @@
+body {
+background: url("gato-celeste.gif");
+background-size: cover;
+background-repeat: no-repeat;
+height: 100vh;
+}
+.hide {
+display: none !important;
+}
+.container {
+width: 1140px;
+margin: 0 auto;
+}
+.header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.header__logo {
+  color: #444444;
+  background: #ffffff;
+  text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc, 1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee, 4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc, 4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee, 7px 6px 1px #cccccc;
+};
+
+.header__menu {
+
+position: relative;
+}
+.header__menu .menu__btn {
+background: transparent;
+border: none;
+cursor: pointer;
+}
+.header__menu .menu__btn svg {
+width: 25px;
+height: 25px;
+}
+.header__menu .menu__list {
+margin: 0;
+padding: 10px 20px;
+list-style-type: none;
+border-radius: 4px;
+background: #e2e2e2;
+position: absolute;
+bottom: 0;
+right: 0;
+transform: translateY(100%);
+display: flex;
+flex-direction: column;
+gap: 10px;
+animation: menu-showing .3s;
+}
+.header__menu .menu__link {
+font-size: 14px;
+line-height: 16px;
+color: #000;
+text-decoration: none;
+}
+@keyframes menu-showing {
+from {
+transform: translateY(95%);
+}
+}
+
+
+#dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f100;
+  min-width: 160px;
+  z-index: 1;
+  
+}
+/* #successful{
+	border: 5px solid green; 
+    border-radius: 15px;
+}
+
+#unsuccessful{
+	border: 5px solid yellow; 
+    border-radius: 15px;
+}
+#superunsuccessful{
+	border: 5px solid red; 
+    border-radius: 15px;
+} */
+
+#dropdownContent a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: #333;
+  
+}
+
+#dropdownContent a:hover {
+  background-color: #00000037;
+}
+
+#dropdownButton {
+  background-color: #00000095;
+  color: white;
+  padding: 12px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+#invisibleButton {
+  background: transparent;
+  border: none !important;
+  font-size:0;
+  margin: 0 auto;
+  display: block;
+  height: 500px;
+  width: 800px;
+}	 
+
+.money {
+  position: absolute;
+  left:1000px;
+  top:300px;
+
+}
+
+
+
+.counter {
+  position: absolute;
+  left: 1050px;
+  top: 280px;
+  font-family: cursive;
+}
+
+
+/* .VK {
+  color: black;
+  text-decoration: none;
+}
+
+.VK:hover {
+  background-color: #00000039;
+  color: pointer;
+} */
+
+
+.VK {
+  display: inline-block;
+  color: black; /* Цвет обычной ссылки */
+  line-height: 1;
+  text-decoration: none; /* Убираем подчеркивание */
+  cursor: pointer;
+}
+.VK:after {
+  background-color: #f66d52; /* Цвет линии при наведении на нее курсора мыши */
+  display: block;
+  content: "";
+  height: 2px; /* Высота линии */
+  width: 0%;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+}
+.VK:hover:after,
+.VK:focus:after {
+  width: 100%;
+}
+
+
+.git {
+  display: inline-block;
+  color: black; /* Цвет обычной ссылки */
+  line-height: 1;
+  text-decoration: none; /* Убираем подчеркивание */
+  cursor: pointer;
+}
+.git:after {
+  background-color: #f66d52; /* Цвет линии при наведении на нее курсора мыши */
+  display: block;
+  content: "";
+  height: 2px; /* Высота линии */
+  width: 0%;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+}
+.git:hover:after,
+.git:focus:after {
+  width: 100%;
+}
+/* .git {
+  color: black;
+  text-decoration: none;
+}
+
+.git:hover {
+  background-color: #00000039;
+  color: pointer;
+} */
+
+
+.questions {
+  font-size: large;
+}
+
+.soon {
+  font-family: cursive;
+  color: #000000d4;
+  font-size: small;
+}
+
+
+.button-button1 {
+  border-radius: 12px;
+}
